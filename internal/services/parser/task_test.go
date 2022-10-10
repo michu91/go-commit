@@ -1,10 +1,10 @@
 package parser
 
 import (
+	"testing"
+
 	"github.com/oriser/regroup"
 	"github.com/stretchr/testify/assert"
-
-	"testing"
 )
 
 func TestParseTaskIdFromBranchSuccess(t *testing.T) {

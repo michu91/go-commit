@@ -3,6 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
+
 	"github.com/michu91/go-commit/internal/services/git"
 )
 
@@ -21,7 +23,7 @@ func main() {
 
 	output, err := git.CommitCommand(commitMessage)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 
 	fmt.Println(output)
